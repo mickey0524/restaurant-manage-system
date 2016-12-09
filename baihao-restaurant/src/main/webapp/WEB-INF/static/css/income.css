@@ -1,0 +1,155 @@
+.income {
+    width: 20%;
+    float: right;
+    margin-right: 10%;
+    margin-top: 5%;
+}
+
+.income p {
+    margin: 10px 40px 10px 10px;
+    font-size: 20px;
+    text-align: right;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+}
+
+.income p span {
+    font-size: 25px;
+    color: #f65a5b;
+}
+
+.income button {
+    width: 200px;
+    height: 40px;
+    display: inline-block;
+    text-align: center;
+    line-height: 40px;
+    color: #BE4F48;
+    border: 1px solid #BE4F48;
+    cursor: pointer;
+    font-size: 20px;
+    background: #fff;
+
+    transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+}
+
+.income button:hover {
+    background: #BE4F48;
+    color: #fff;
+    border-radius: 3px;
+}
+
+.settle_accounts {
+    padding: 70px 11%;
+}
+
+.check_up_info h3 {
+    margin: 0 0 20px 0;
+    text-align: center;
+    font-size: 28px;
+    font-family: 'Roboto Slab', serif;
+    color: #f65a5b;
+    font-weight: bold;
+}
+
+.check_up_info input[type='text'] {
+    float: right;
+    margin-right: 20%;
+}
+
+.check_up_info button {
+    display: inline-block;
+    float: right;
+    width: 100px;
+    font-family: '微软雅黑';
+    font-size: 17px;
+    color: #fff;
+    background: #E53C3C;
+    cursor: pointer;
+    border: 1px solid #E53C3C;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+
+.check_up_info button:hover {
+    background: #fff;
+    color: #E53C3C;
+    border-radius: 3px;
+}
+
+.settle_accounts .order {
+    padding-left: 2%;
+    float: left;
+    margin-top: 50px;
+    width: 50%;
+    height: 150px;
+    border: 1px dotted #DCDCDC;
+    position: relative;
+    min-height: 180px;
+}
+
+.settle_accounts .order .number {
+    width: 30%;
+    height: 100%;
+    float: left;
+}
+
+.settle_accounts .order .number p {
+    line-height: 50px;
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+.settle_accounts .order .number p span {
+    margin-left: 1%;
+    font-size: 25px;
+    font-style: oblique;
+    color: #f65a5b;
+    vertical-align: middle;
+}
+
+.settle_accounts .order .food {
+    margin-left: 35%;
+    line-height: 30px;
+}
+
+.settle_accounts .order .food p span {
+    margin: 0 10px;
+}
+
+.settle_accounts .order a {
+    color: #000;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    cursor: pointer;
+}
+
+#toTop {
+    display: none;
+    text-decoration: none;
+    position: fixed;
+    bottom: 70px;
+    right: 1%;
+    overflow: hidden;
+    z-index: 999;
+    width: 32px;
+    height: 32px;
+    border: none;
+    text-indent: 100%;
+    background: url("../images/arr.png") no-repeat 0px 0px;
+}
+#toTopHover {
+    width: 32px;
+    height: 32px;
+    display: block;
+    overflow: hidden;
+    float: right;
+    opacity: 0;
+    -moz-opacity: 0;
+    filter: alpha(opacity=0);
+}
+

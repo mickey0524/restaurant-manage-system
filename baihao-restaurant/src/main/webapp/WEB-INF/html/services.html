@@ -1,0 +1,628 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Purchase</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="expires" content="0">
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Custom Theme files -->
+    <link rel='stylesheet' type='text/css' href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/purchase.css">
+    <!-- Custom Theme files -->
+</head>
+<body>
+<!--banner-->
+<div class="about_banner">
+    <!--header-->
+    <div class="headder">
+        <div class="container">
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="/"> <img src="/images/logo.png" alt=""/> </a>
+                    </div>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="login">Login</a></li>
+                            <li><a href="/">Home</a></li>
+                            <li><a href="about">About us</a></li>
+                            <li><a href="menu">Menu</a></li>
+                            <li><a href="serve">Serve</a></li>
+                            <li><a href="services" class="active">Purchase</a></li>
+                            <li><a href="contact">Check_up</a></li>
+                        </ul>
+                    </div>
+                    <div class="clearfix"> </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+</div>
+<!--//banner-->
+<div class="delicious">
+    <div class="container">
+        <div class="delicious-info">
+            <h3>各种菜的剩余量</h3>
+            <div class="strip-line"></div>
+        </div>
+        <div class="delicious-grids">
+            <div class="col-md-3 delicious-grid">
+                <h3>bread crumbs soup</h3>
+                <a data-toggle="modal" data-target="#first"><img src="/images/k1.jpg" class="img-responsive" alt=""/></a>
+                <label>
+                    Surplus:
+                    <p class="surplus">123</p>
+                </label>
+            </div>
+            <div class="modal fade" id="first" tabindex="-1" aria-labelledby="MyModal" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                                &times;
+                            </button>
+                            <h2 class="modal-title" id="myModalLabel">
+                                bread crumbs soup各市场菜价对比
+                            </h2>
+                        </div>
+                        <div class="modal-body">
+                            <div class="market">
+                                <h3>菜市场一</h3>
+                                <label>距离:<span>100km</span></label>
+                                <label>菜价:<span class="money_1 bread_crumbs_soup">¥23</span></label>
+                                <div class="input-group">
+                                    <input type="text" class="form-control">
+                                    <span class="input-group-btn">
+          					  				<button class="btn btn-default" type="button">购买</button>
+          					  			</span>
+                                </div>
+                            </div>
+                            <div class="market">
+                                <h3>菜市场二</h3>
+                                <label>距离:<span>134km</span></label>
+                                <label>菜价:<span class="money_2 bread_crumbs_soup">¥23</span></label>
+                                <div class="input-group">
+                                    <input type="text" class="form-control">
+                                    <span class="input-group-btn">
+          					  				<button class="btn btn-default" type="button">购买</button>
+          					  			</span>
+                                </div>
+                            </div>
+                            <div class="market">
+                                <h3>菜市场三</h3>
+                                <label>距离:<span>170km</span></label>
+                                <label>菜价:<span class="money_3 bread_crumbs_soup">¥23</span></label>
+                                <div class="input-group">
+                                    <input type="text" class="form-control">
+                                    <span class="input-group-btn">
+          					  				<button class="btn btn-default" type="button">购买</button>
+          					  			</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">
+                                关闭
+                            </button>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">
+                                提交更改
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 delicious-grid">
+                <h3>delicious carrot bread</h3>
+                <a data-toggle="modal" data-target="#second"><img src="images/k2.jpg" class="img-responsive" alt=""/></a>
+                <label>
+                    Surplus:
+                    <p class="surplus">123</p>
+                </label>
+            </div>
+            <div class="modal fade" id="second" tabindex="-1" aria-labelledby="MyModal" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                                &times;
+                            </button>
+                            <h2 class="modal-title" id="myModalLabel">
+                                delicious carrot bread各市场菜价对比
+                            </h2>
+                        </div>
+                        <div class="modal-body">
+                            <div class="market">
+                                <h3>菜市场一</h3>
+                                <label>距离:<span>100km</span></label>
+                                <label>菜价:<span class="money_1 delicious_carrot_bread">¥23</span></label>
+                                <div class="input-group">
+                                    <input type="text" class="form-control">
+                                    <span class="input-group-btn">
+          					  				<button class="btn btn-default" type="button">购买</button>
+          					  			</span>
+                                </div>
+                            </div>
+                            <div class="market">
+                                <h3>菜市场二</h3>
+                                <label>距离:<span>134km</span></label>
+                                <label>菜价:<span class="money_2 delicious_carrot_bread">¥23</span></label>
+                                <div class="input-group">
+                                    <input type="text" class="form-control">
+                                    <span class="input-group-btn">
+          					  				<button class="btn btn-default" type="button">购买</button>
+          					  			</span>
+                                </div>
+                            </div>
+                            <div class="market">
+                                <h3>菜市场三</h3>
+                                <label>距离:<span>170km</span></label>
+                                <label>菜价:<span class="money_3 delicious_carrot_bread">¥23</span></label>
+                                <div class="input-group">
+                                    <input type="text" class="form-control">
+                                    <span class="input-group-btn">
+          					  				<button class="btn btn-default" type="button">购买</button>
+          					  			</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">
+                                关闭
+                            </button>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">
+                                提交更改
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 delicious-grid">
+                <h3>yummy noodles</h3>
+                <a data-toggle="modal" data-target="#third"><img src="/images/k3.jpg" class="img-responsive" alt=""/></a>
+                <label>
+                    Surplus:
+                    <p class="surplus">123</p>
+                </label>
+            </div>
+            <div class="modal fade" id="third" tabindex="-1" aria-labelledby="MyModal" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                                &times;
+                            </button>
+                            <h2 class="modal-title" id="myModalLabel">
+                                yummy noodles各市场菜价对比
+                            </h2>
+                        </div>
+                        <div class="modal-body">
+                            <div class="market">
+                                <h3>菜市场一</h3>
+                                <label>距离:<span>100km</span></label>
+                                <label>菜价:<span class="money_1 yummy_noodles">¥23</span></label>
+                                <div class="input-group">
+                                    <input type="text" class="form-control">
+                                    <span class="input-group-btn">
+          					  				<button class="btn btn-default" type="button">购买</button>
+          					  			</span>
+                                </div>
+                            </div>
+                            <div class="market">
+                                <h3>菜市场二</h3>
+                                <label>距离:<span>134km</span></label>
+                                <label>菜价:<span class="money_2 yummy_noodles">¥23</span></label>
+                                <div class="input-group">
+                                    <input type="text" class="form-control">
+                                    <span class="input-group-btn">
+          					  				<button class="btn btn-default" type="button">购买</button>
+          					  			</span>
+                                </div>
+                            </div>
+                            <div class="market">
+                                <h3>菜市场三</h3>
+                                <label>距离:<span>170km</span></label>
+                                <label>菜价:<span class="money_3 yummy_noodles">¥23</span></label>
+                                <div class="input-group">
+                                    <input type="text" class="form-control">
+                                    <span class="input-group-btn">
+          					  				<button class="btn btn-default" type="button">购买</button>
+          					  			</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">
+                                关闭
+                            </button>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">
+                                提交更改
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 delicious-grid">
+                <h3>vegetable pasta</h3>
+                <a data-toggle="modal" data-target="#fourth"><img src="images/k4.jpg" class="img-responsive" alt=""/></a>
+                <label>
+                    Surplus:
+                    <p class="surplus">123</p>
+                </label>
+            </div>
+            <div class="modal fade" id="fourth" tabindex="-1" aria-labelledby="MyModal" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                                &times;
+                            </button>
+                            <h2 class="modal-title" id="myModalLabel">
+                                vegetable pasta各市场菜价对比
+                            </h2>
+                        </div>
+                        <div class="modal-body">
+                            <div class="market">
+                                <h3>菜市场一</h3>
+                                <label>距离:<span>100km</span></label>
+                                <label>菜价:<span class="money_1 vegetable_pasta">¥23</span></label>
+                                <div class="input-group">
+                                    <input type="text" class="form-control">
+                                    <span class="input-group-btn">
+          					  				<button class="btn btn-default" type="button">购买</button>
+          					  			</span>
+                                </div>
+                            </div>
+                            <div class="market">
+                                <h3>菜市场二</h3>
+                                <label>距离:<span>134km</span></label>
+                                <label>菜价:<span class="money_2 vegetable_pasta">¥23</span></label>
+                                <div class="input-group">
+                                    <input type="text" class="form-control">
+                                    <span class="input-group-btn">
+          					  				<button class="btn btn-default" type="button">购买</button>
+          					  			</span>
+                                </div>
+                            </div>
+                            <div class="market">
+                                <h3>菜市场三</h3>
+                                <label>距离:<span>170km</span></label>
+                                <label>菜价:<span class="money_3 vegetable_pasta">¥23</span></label>
+                                <div class="input-group">
+                                    <input type="text" class="form-control">
+                                    <span class="input-group-btn">
+          					  				<button class="btn btn-default" type="button">购买</button>
+          					  			</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">
+                                关闭
+                            </button>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">
+                                提交更改
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 delicious-grid">
+                <h3>mixed veg salad</h3>
+                <a data-toggle="modal" data-target="#fifth"><img src="images/k5.jpg" class="img-responsive" alt=""/></a>
+                <label>
+                    Surplus:
+                    <p class="surplus">123</p>
+                </label>
+            </div>
+            <div class="modal fade" id="fifth" tabindex="-1" aria-labelledby="MyModal" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                                &times;
+                            </button>
+                            <h2 class="modal-title" id="myModalLabel">
+                                mixed veg salad各市场菜价对比
+                            </h2>
+                        </div>
+                        <div class="modal-body">
+                            <div class="market">
+                                <h3>菜市场一</h3>
+                                <label>距离:<span>100km</span></label>
+                                <label>菜价:<span class="money_1 mixed_veg_salad">¥23</span></label>
+                                <div class="input-group">
+                                    <input type="text" class="form-control">
+                                    <span class="input-group-btn">
+          					  				<button class="btn btn-default" type="button">购买</button>
+          					  			</span>
+                                </div>
+                            </div>
+                            <div class="market">
+                                <h3>菜市场二</h3>
+                                <label>距离:<span>134km</span></label>
+                                <label>菜价:<span class="money_2 mixed_veg_salad">¥23</span></label>
+                                <div class="input-group">
+                                    <input type="text" class="form-control">
+                                    <span class="input-group-btn">
+          					  				<button class="btn btn-default" type="button">购买</button>
+          					  			</span>
+                                </div>
+                            </div>
+                            <div class="market">
+                                <h3>菜市场三</h3>
+                                <label>距离:<span>170km</span></label>
+                                <label>菜价:<span class="money_3 mixed_veg_salad">¥23</span></label>
+                                <div class="input-group">
+                                    <input type="text" class="form-control">
+                                    <span class="input-group-btn">
+          					  				<button class="btn btn-default" type="button">购买</button>
+          					  			</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">
+                                关闭
+                            </button>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">
+                                提交更改
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 delicious-grid">
+                <h3>breakFast special</h3>
+                <a data-toggle="modal" data-target="#sixth"><img src="images/k6.jpg" class="img-responsive" alt=""/></a>
+                <label>
+                    Surplus:
+                    <p class="surplus">123</p>
+                </label>
+            </div>
+            <div class="modal fade" id="sixth" tabindex="-1" aria-labelledby="MyModal" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                                &times;
+                            </button>
+                            <h2 class="modal-title" id="myModalLabel">
+                                breakFast special各市场菜价对比
+                            </h2>
+                        </div>
+                        <div class="modal-body">
+                            <div class="market">
+                                <h3>菜市场一</h3>
+                                <label>距离:<span>100km</span></label>
+                                <label>菜价:<span class="money_1 breakFast_special">¥23</span></label>
+                                <div class="input-group">
+                                    <input type="text" class="form-control">
+                                    <span class="input-group-btn">
+          					  				<button class="btn btn-default" type="button">购买</button>
+          					  			</span>
+                                </div>
+                            </div>
+                            <div class="market">
+                                <h3>菜市场二</h3>
+                                <label>距离:<span>134km</span></label>
+                                <label>菜价:<span class="money_2 breakFast_special">¥23</span></label>
+                                <div class="input-group">
+                                    <input type="text" class="form-control">
+                                    <span class="input-group-btn">
+          					  				<button class="btn btn-default" type="button">购买</button>
+          					  			</span>
+                                </div>
+                            </div>
+                            <div class="market">
+                                <h3>菜市场三</h3>
+                                <label>距离:<span>170km</span></label>
+                                <label>菜价:<span class="money_3 breakFast_special">¥23</span></label>
+                                <div class="input-group">
+                                    <input type="text" class="form-control">
+                                    <span class="input-group-btn">
+          					  				<button class="btn btn-default" type="button">购买</button>
+          					  			</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">
+                                关闭
+                            </button>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">
+                                提交更改
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 delicious-grid">
+                <h3>healthy tomato soup</h3>
+                <a data-toggle="modal" data-target="#seventh"><img src="images/k7.jpg" class="img-responsive" alt=""/></a>
+                <label>
+                    Surplus:
+                    <p class="surplus">123</p>
+                </label>
+            </div>
+            <div class="modal fade" id="seventh" tabindex="-1" aria-labelledby="MyModal" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                                &times;
+                            </button>
+                            <h2 class="modal-title" id="myModalLabel">
+                                healthy tomato soup各市场菜价对比
+                            </h2>
+                        </div>
+                        <div class="modal-body">
+                            <div class="market">
+                                <h3>菜市场一</h3>
+                                <label>距离:<span>100km</span></label>
+                                <label>菜价:<span class="money_1 healthy_tomato_soup">¥23</span></label>
+                                <div class="input-group">
+                                    <input type="text" class="form-control">
+                                    <span class="input-group-btn">
+          					  				<button class="btn btn-default" type="button">购买</button>
+          					  			</span>
+                                </div>
+                            </div>
+                            <div class="market">
+                                <h3>菜市场二</h3>
+                                <label>距离:<span>134km</span></label>
+                                <label>菜价:<span class="money_2 healthy_tomato_soup">¥23</span></label>
+                                <div class="input-group">
+                                    <input type="text" class="form-control">
+                                    <span class="input-group-btn">
+          					  				<button class="btn btn-default" type="button">购买</button>
+          					  			</span>
+                                </div>
+                            </div>
+                            <div class="market">
+                                <h3>菜市场三</h3>
+                                <label>距离:<span>170km</span></label>
+                                <label>菜价:<span class="money_3 healthy_tomato_soup">¥23</span></label>
+                                <div class="input-group">
+                                    <input type="text" class="form-control">
+                                    <span class="input-group-btn">
+          					  				<button class="btn btn-default" type="button">购买</button>
+          					  			</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">
+                                关闭
+                            </button>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">
+                                提交更改
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 delicious-grid">
+                <h3>decilious sushi</h3>
+                <a data-toggle="modal" data-target="#eighth"><img src="images/k8.jpg" class="img-responsive" alt=""/></a>
+                <label>
+                    Surplus:
+                    <p class="surplus">123</p>
+                </label>
+            </div>
+            <div class="modal fade" id="eighth" tabindex="-1" aria-labelledby="MyModal" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                                &times;
+                            </button>
+                            <h2 class="modal-title" id="myModalLabel">
+                                decilious sushi各市场菜价对比
+                            </h2>
+                        </div>
+                        <div class="modal-body">
+                            <div class="market">
+                                <h3>菜市场一</h3>
+                                <label>距离:<span>100km</span></label>
+                                <label>菜价:<span class="money_1 decilious_sushi">¥23</span></label>
+                                <div class="input-group">
+                                    <input type="text" class="form-control">
+                                    <span class="input-group-btn">
+          					  				<button class="btn btn-default" type="button">购买</button>
+          					  			</span>
+                                </div>
+                            </div>
+                            <div class="market">
+                                <h3>菜市场二</h3>
+                                <label>距离:<span>134km</span></label>
+                                <label>菜价:<span class="money_2 decilious_sushi">¥23</span></label>
+                                <div class="input-group">
+                                    <input type="text" class="form-control">
+                                    <span class="input-group-btn">
+          					  				<button class="btn btn-default" type="button">购买</button>
+          					  			</span>
+                                </div>
+                            </div>
+                            <div class="market">
+                                <h3>菜市场三</h3>
+                                <label>距离:<span>170km</span></label>
+                                <label>菜价:<span class="money_3 decilious_sushi">¥23</span></label>
+                                <div class="input-group">
+                                    <input type="text" class="form-control">
+                                    <span class="input-group-btn">
+          					  				<button class="btn btn-default" type="button">购买</button>
+          					  			</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">
+                                关闭
+                            </button>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">
+                                提交更改
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</div>
+<div class="purchase_order">
+    <div class="container">
+        <div class="purchase-info">
+            <h3>生成的采购单</h3>
+            <div class="strip-line"></div>
+        </div>
+        <div class="purchase_set">
+            <textarea></textarea>
+            <!--button class="btn btn-primary">Submit</button-->
+            <input type="submit" value="Sumbit">
+        </div>
+    </div>
+</div>
+<div class="clearfix"></div>
+<div class="footer">
+    <div class="container">
+        <div class="col-md-6 col_2">
+            <ul><li><h5>Tuesday to Friday</h5><p>Lunch: <span>12pm – 03pm</span></p><p>Dinner: <span>05pm – 10pm</span></p></li>
+                <li><h5>Saturday &amp; Sunday</h5><p>Lunch: <span>11pm – 05pm</span></p><p>Dinner: <span>04pm – 11pm</span></p></li>
+            </ul>
+        </div>
+        <div class="col-md-6 col_3">
+            <div class="col_3">
+                <ul class="menu">
+                    <li><a href="login">Login</a></li> |
+                    <li><a href="/">Home</a></li> |
+                    <li><a href="about">About</a></li> |
+                    <li><a href="menu">Menu</a></li> |
+                    <li><a href="serve">Serve</a></li> |
+                    <li><a href="services">Purchase</a></li> |
+                    <li><a href="contact">Check_up</a></li>
+                </ul>
+                <p>本店最终解释权归北邮小分队所有</p>
+            </div>
+        </div>
+        <div class="clearfix"> </div>
+    </div>
+</div>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/purchase.js"></script>
+</body>
+</html>

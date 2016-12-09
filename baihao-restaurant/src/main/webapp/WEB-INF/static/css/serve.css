@@ -1,0 +1,61 @@
+.cook_food {
+    padding: 70px 0 0 0;
+}
+
+.cook_food_info h3 {
+    margin: 0 0 20px 0;
+    text-align: center;
+    font-size: 28px;
+    font-family: 'Roboto Slab', serif;
+    color: #f65a5b;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+.cook_menu {
+    width: 33%;
+    float: left;
+    border-right: 1px dotted #DCDCDC;
+    padding: 0 2%;
+}
+
+.cook_menu {
+    border-left: 1px dotted #DCDCDC;
+}
+
+.cook_menu .cook {
+    display: inline-block;
+    text-align: center;
+}
+
+.cook_menu .cook img {
+    padding-left: 6%;
+}
+
+.cook_menu .cook h3 {
+    padding-top: 10px;
+}
+
+.menu {
+    display: inline-block;
+    text-align: center;
+    padding-top: 0;
+    padding-bottom: 0;
+    /*margin-bottom: 20px;*/
+    position: relative;
+    border-top: 1px dotted #DCDCDC;
+    border-bottom: 1px dotted #DCDCDC;
+}
+
+.menu h3 {
+    text-align: center;
+}
+
+.menu p span {
+    color: #f65a5b;
+}
+
+.menu img {
+    display: inline-block;
+    text-align: center;
+}

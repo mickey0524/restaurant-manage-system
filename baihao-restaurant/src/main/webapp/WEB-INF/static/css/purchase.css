@@ -1,0 +1,101 @@
+.delicious {
+    padding: 70px 0;
+}
+
+.delicious-info h3 {
+    margin: 0 0 20px 0;
+    text-align: center;
+    font-size: 28px;
+    font-family: 'Roboto Slab', serif;
+    color: #f65a5b;
+    font-weight: bold;
+}
+
+.delicious-grid h3 {
+    padding: 8px 0px;
+    text-align: center;
+    font-size: 22px;
+    font-family: 'Roboto Slab', serif;
+    color: #f65a5b;
+}
+
+.delicious-grids {
+    margin-top: 40px;
+}
+
+.delicious-grid {
+    float: left;
+    width: 25%;
+    padding: 7px;
+    border: 1px solid #DCDCDC;
+}
+
+.delicious-grid p {
+    display: inline-block;
+    font-size: 25px;
+    font-family: 'Roboto Slab', serif;
+    color: #f65a5b;
+    vertical-align: baseline;
+    margin-top: 5px;
+}
+
+.delicious-grid label {
+    font-size: 20px;
+}
+
+.market {
+    display: inline-block;
+    font-family: 'Roboto Slab';
+    width: 30%;
+    margin-right: 2%;
+}
+
+.market h3 {
+    font-size: 20px;
+}
+
+.purchase-info {
+    margin: 0 0 40px 0;
+    width: 50%;
+    margin-left: 20%;
+}
+
+.purchase-info h3 {
+    text-align: center;
+    font-size: 28px;
+    font-family: 'Roboto Slab', serif;
+    color: #f65a5b;
+    font-weight: bold;
+}
+
+.purchase_set textarea {
+    resize: none;
+    margin-left: 20%;
+    width: 50%;
+    min-height: 200px;
+    border: none;
+    outline: none;
+    border: 1px solid #DCDCDC;
+    vertical-align: bottom;
+    /*font-size: 14px;*/
+    /*font-family: 'Microsoft YaHei';*/
+}
+
+.purchase_set input[type="submit"]{
+    font-size: 1.5em;
+    background: #ff6b4a;
+    padding: 0.6em 2em;
+    text-align: center;
+    color: #fff;
+    border: none;
+    outline: none;
+    -webkit-appearance: none;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+.purchase_set input[type="submit"]:hover{
+    background: #555;
+}

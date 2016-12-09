@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:mvc="http://www.springframework.org/schema/mvc" xmlns:mybatis="http://mybatis.org/schema/mybatis-spring"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd http://mybatis.org/schema/mybatis-spring http://mybatis.org/schema/mybatis-spring.xsd">
+
+    <import resource="dataSource.xml"></import>
+    <context:component-scan base-package="me.freezehome.blog.controller"></context:component-scan>
+    <mybatis:scan base-package="me.freezehome.blog.dao"></mybatis:scan>
+    <mvc:default-servlet-handler/>
+    <mvc:annotation-driven/>
+
+    <!--ViewResolver 视图解析器-->
+    <!--用于支持Servlet、JSP视图解析-->
+    <bean id="jspViewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="viewClass" value="org.springframework.web.servlet.view.JstlView"/>
+        <property name="prefix" value="/WEB-INF/html/"/>
+        <property name="suffix" value=".html"/>
+    </bean>
+
+    <mvc:resources mapping="/css/**" location="/WEB-INF/static/css/"></mvc:resources>
+    <mvc:resources mapping="/js/**" location="/WEB-INF/static/js/"></mvc:resources>
+    <mvc:resources mapping="/fonts/**" location="/WEB-INF/static/fonts/"></mvc:resources>
+    <mvc:resources mapping="/images/**" location="/WEB-INF/static/images/"></mvc:resources>
+    <!-- 启用默认配置 -->
+    <mvc:annotation-driven>
+        <mvc:message-converters register-defaults="true">
+            <!-- 配置Fastjson支持 -->
+            <bean class="com.alibaba.fastjson.support.spring.FastJsonHttpMessageConverter">
+                <property name="supportedMediaTypes">
+                    <list>
+                        <value>text/html;charset=UTF-8</value>
+                        <value>application/json</value>
+                    </list>
+                </property>
+                <property name="features">
+                    <list>
+                        <value>WriteMapNullValue</value>
+                        <value>QuoteFieldNames</value>
+                    </list>
+                </property>
+            </bean>
+        </mvc:message-converters>
+    </mvc:annotation-driven>
+    <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <property name="configLocation" value="classpath:mybatis-config.xml"></property>
+        <property name="dataSource" ref="dataSource"></property>
+    </bean>
+
+    <bean id="userService" class="me.freezehome.blog.service.UserService"></bean>
+    <bean id="purchaseService" class="me.freezehome.blog.service.PurchaseService"></bean>
+    <bean id="balanceService" class="me.freezehome.blog.service.BalanceService"></bean>
+    <bean id="indentService" class="me.freezehome.blog.service.IndentService"></bean>
+    <bean id="serveService" class="me.freezehome.blog.service.ServeService"></bean>
+
+    <bean id="myTimer" class="me.freezehome.blog.controller.TimerController"></bean>
+    <!--定时器job的配置开始-->
+    <bean id="myTimerDetail" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+        <property name="targetObject">
+            <ref bean="myTimer" />
+        </property>
+        <property name="targetMethod">
+            <value>timer</value>
+        </property>
+        <!--concurrent=false表示不做并发执行，一个任务未完成下一个任务等待上一个任务-->
+        <property name="concurrent">
+            <value>false</value>
+        </property>
+    </bean>
+
+    <!--调度的配置-->
+    <bean id="crontestJobTrigger" class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
+        <property name="jobDetail">
+            <ref bean="myTimerDetail" />
+        </property>
+        <!--每天晚上十二点执行-->
+        <property name="cronExpression" value="1 0 0 * * ?">
+            <!--每一分钟执行-->
+            <!--value>0 0/1 * * * ?</value-->
+        </property>
+    </bean>
+
+    <bean name="startQuertz" lazy-init="false" autowire="no" class="org.springframework.scheduling.quartz.SchedulerFactoryBean">
+        <property name="triggers">
+            <list>
+                <ref bean="crontestJobTrigger" />
+            </list>
+        </property>
+    </bean>
+</beans>
